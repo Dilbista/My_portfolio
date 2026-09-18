@@ -1,0 +1,36 @@
+/* body{
+  background-color: #1E293B;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at top right, #2563eb22, transparent 35%),
+    radial-gradient(circle at bottom left, #7c3aed22, transparent 30%), #0f172a;
+}
+
+/* Laptop */
+@media (max-width: 1200px) {
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+}

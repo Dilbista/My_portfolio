@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "npm --prefix portfolio run dev",
+    "build": "npm --prefix portfolio run build",
+    "lint": "npm --prefix portfolio run lint",
+    "preview": "npm --prefix portfolio run preview"
+  },
+  "dependencies": {
+    "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.4"
+  }
+}

@@ -1,0 +1,281 @@
+/* ============================================================
+   SKILLS
+   ============================================================ */
+
+.skills {
+  padding: 100px 8%;
+  background: #0b1c34;
+}
+
+
+/* ============================================================
+   TITLE
+   ============================================================ */
+
+.skills h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+
+/* ============================================================
+   DESCRIPTION
+   ============================================================ */
+
+.skills p {
+  text-align: center;
+  color: #94a3b8;
+
+  max-width: 700px;
+
+  margin: auto;
+  margin-bottom: 60px;
+
+  line-height: 1.8;
+}
+
+
+/* ============================================================
+   SKILLS GRID
+   ============================================================ */
+
+.skills-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+
+  gap: 30px;
+}
+
+
+/* ============================================================
+   SKILL CARD
+   ============================================================ */
+
+.skill-card {
+  background: rgba(15, 29, 48, 0.85);
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  border: 1px solid #1d354f;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.2);
+
+  transition: 0.35s;
+
+  min-width: 0;
+}
+
+
+/* ============================================================
+   CARD HOVER
+   ============================================================ */
+
+.skill-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 212, 255, 0.55);
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.35),
+    0 0 25px rgba(0, 212, 255, 0.08);
+}
+
+
+/* ============================================================
+   SKILL HEADER
+   ============================================================ */
+
+.skill-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+
+  gap: 16px;
+}
+
+
+/* ============================================================
+   SKILL ICON
+   ============================================================ */
+
+.skill-icon {
+  font-size: 38px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.35s;
+}
+
+
+/* Icon hover */
+.skill-card:hover .skill-icon {
+  transform: scale(1.08);
+}
+
+
+/* ============================================================
+   SKILL INFORMATION
+   ============================================================ */
+
+.skill-info {
+  flex: 1;
+
+  min-width: 0;
+}
+
+
+/* Skill name */
+
+.skill-info h3 {
+  font-size: 20px;
+
+  margin-bottom: 5px;
+
+  color: #ffffff;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* Percentage */
+
+.skill-info span {
+  color: #00d4ff;
+
+  font-weight: 600;
+}
+
+
+/* ============================================================
+   PROGRESS BAR
+   ============================================================ */
+
+.progress {
+  width: 100%;
+
+  height: 10px;
+
+  background: #122238;
+
+  border-radius: 50px;
+
+  overflow: hidden;
+}
+
+
+/* ============================================================
+   PROGRESS FILL
+   ============================================================ */
+
+.progress-fill {
+  height: 100%;
+
+  border-radius: 50px;
+
+  transition: width 1.5s ease;
+}
+
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 992px) {
+
+  .skills {
+    padding: 80px 6%;
+  }
+
+  .skills h2 {
+    font-size: 36px;
+  }
+
+  .skills p {
+    margin-bottom: 45px;
+  }
+
+  .skills-grid {
+    gap: 24px;
+  }
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 640px) {
+
+  .skills {
+    padding: 65px 5%;
+  }
+
+  .skills h2 {
+    font-size: 30px;
+  }
+
+  .skills p {
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-icon {
+    font-size: 34px;
+  }
+
+  .skill-info h3 {
+    font-size: 18px;
+  }
+}
+
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 380px) {
+
+  .skill-card {
+    padding: 18px;
+  }
+
+  .skill-header {
+    gap: 12px;
+  }
+
+  .skill-icon {
+    font-size: 30px;
+  }
+
+  .skill-info h3 {
+    font-size: 16px;
+  }
+}
