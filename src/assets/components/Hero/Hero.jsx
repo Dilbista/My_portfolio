@@ -29,7 +29,7 @@ const Hero = () => {
 
         {/* Typing Text */}
         <h1 className="typing-text">
-          Hello, I'm Dil Bista update
+          Hello, I'm Dil Bista 
         </h1>
 
         <h2>Full Stack Developer</h2>
