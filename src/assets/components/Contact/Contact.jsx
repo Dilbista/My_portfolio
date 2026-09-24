@@ -18,12 +18,14 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const mailto = `mailto:bistadil3@example.com?subject=${encodeURIComponent(
+
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=bistadil3@example.com&su=${encodeURIComponent(
       formData.subject,
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
     )}`;
-    window.location.href = mailto;
+
+    window.open(gmailUrl, "_blank");
   };
 
   return (
@@ -31,8 +33,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact-heading">
           <h2>Contact Me</h2>
-
-         
+          <p>Send me a message easily through Gmail.</p>
         </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -72,7 +73,7 @@ const Contact = () => {
             required
           />
 
-          <button type="submit">Open Email App</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </section>
