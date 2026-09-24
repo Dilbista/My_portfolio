@@ -17,9 +17,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       {/* Logo */}
-      <div className="logo">
+      <Link to="/" className="logo" onClick={closeMenu}>
         Dil <span>Bista</span>
-      </div>
+      </Link>
 
       {/* Navigation */}
       <ul className={open ? "nav-links active" : "nav-links"}>
@@ -30,19 +30,13 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link
-            to={{ pathname: "/", hash: "#skills" }}
-            onClick={closeMenu}
-          >
+          <Link to={{ pathname: "/", hash: "#skills" }} onClick={closeMenu}>
             Skills
           </Link>
         </li>
 
         <li>
-          <Link
-            to={{ pathname: "/", hash: "#projects" }}
-            onClick={closeMenu}
-          >
+          <Link to={{ pathname: "/", hash: "#projects" }} onClick={closeMenu}>
             Projects
           </Link>
         </li>

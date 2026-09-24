@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* ================== Navbar ================== */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -12,22 +14,42 @@
   height: 75px;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 0 8%;
   z-index: 1000;
 }
+
+/* ================== Logo ================== */
 
 .logo {
   font-size: 28px;
   font-weight: bold;
   color: #111827;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .logo span {
   color: #2563eb;
+  transition: color 0.3s ease;
 }
+
+/* Logo Hover */
+
+.logo:hover {
+  color: #2563eb;
+}
+
+.logo:hover span {
+  color: #111827;
+}
+
+/* ================== Navigation ================== */
 
 .nav-links {
   display: flex;
@@ -36,37 +58,94 @@
 }
 
 .nav-links li a {
+  position: relative;
+
   text-decoration: none;
   color: #333;
   font-size: 17px;
-  transition: 0.3s;
+
+  transition: color 0.3s ease;
 }
+
+/* Navigation Hover Color */
 
 .nav-links li a:hover {
   color: #2563eb;
 }
 
+/* Navigation Underline */
+
+.nav-links li a::after {
+  content: "";
+
+  position: absolute;
+  left: 50%;
+  bottom: -7px;
+
+  width: 0;
+  height: 2px;
+
+  background: #2563eb;
+  border-radius: 10px;
+
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+/* Show Underline */
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* ================== Button ================== */
+
 .btn {
   padding: 10px 22px;
+
   border: none;
   border-radius: 8px;
+
   background: #2563eb;
   color: white;
+
   cursor: pointer;
   font-size: 15px;
-  transition: 0.3s;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
+
+/* Button Hover */
 
 .btn:hover {
   background: #1d4ed8;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
 }
+
+/* ================== Menu Icon ================== */
 
 .menu-icon {
   display: none;
+
   font-size: 28px;
   cursor: pointer;
+
   color: #2563eb;
+
+  transition: transform 0.3s ease;
 }
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* ================== Mobile Button ================== */
 
 .mobile-btn {
   display: none;
@@ -87,6 +166,7 @@
 /* ================== Mobile ================== */
 
 @media (max-width: 768px) {
+
   .desktop-btn {
     display: none;
   }
@@ -97,19 +177,29 @@
 
   .nav-links {
     position: fixed;
+
     top: 75px;
     right: -100%;
+
     width: 280px;
     height: calc(100vh - 75px);
+
     background: white;
+
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
     gap: 30px;
+
     padding-top: 40px;
-    transition: 0.4s;
+
+    transition: right 0.4s ease;
+
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.08);
   }
+
+  /* Open Mobile Menu */
 
   .nav-links.active {
     right: 0;
@@ -118,11 +208,18 @@
   .mobile-btn {
     display: block;
   }
+
+  /* Mobile Hover */
+
+  .nav-links li a:hover::after {
+    width: 60%;
+  }
 }
 
 /* ================== Small Mobile ================== */
 
 @media (max-width: 480px) {
+
   .logo {
     font-size: 22px;
   }
@@ -134,6 +231,7 @@
 
   .nav-links {
     top: 70px;
+
     width: 100%;
     height: calc(100vh - 70px);
   }
