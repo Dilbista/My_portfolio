@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Button from "../Button/Button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -62,9 +63,9 @@ const Navbar = () => {
 
         {/* Mobile Button */}
         <li className="mobile-btn">
-          <button className="btn" onClick={closeMenu}>
+          <Button to="/contact">
             Hire Me
-          </button>
+          </Button>
         </li>
       </ul>
 

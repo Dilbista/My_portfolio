@@ -1,83 +1,69 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Legal.css";
+
 const Privacy = () => {
   return (
-    <div className="legal-page">
-      <div className="legal-container">
-
-        <Link to="/" className="back-home">
-          ← Back to Home
-        </Link>
-
+    <div className="privacy-page">
+      <div className="privacy-container">
         <h1>Privacy Policy</h1>
 
-        <p className="updated">
-          Last Updated: September 24, 2026
+        <p className="privacy-updated">Last updated: September 26, 2026</p>
+
+        <p>
+          Welcome to <strong>bistdil.com.np</strong>. This website is my
+          personal portfolio and blog where I share my experiences, learning
+          journey, projects, tutorials, and technology-related articles.
+        </p>
+
+        <h4>Information We Collect</h4>
+        <p>
+          We may collect information you voluntarily provide, such as your name
+          and email address when you contact us. Basic technical information may
+          also be collected to improve website performance.
+        </p>
+
+        <h4>Cookies & Advertising</h4>
+        <p>
+          This website may use cookies, analytics, and advertising services such
+          as Google AdSense. Third-party providers, including Google, may use
+          cookies to display and measure relevant advertisements.
         </p>
 
         <p>
-          Welcome to the personal portfolio website of Dil Bista.
-          Your privacy is important. This Privacy Policy explains
-          how information may be handled when you visit or use this
-          website.
+          You can manage personalized advertising through{" "}
+          <a
+            href="https://adssettings.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Ads Settings
+          </a>
+          .
         </p>
 
-        <h2>1. Information We Collect</h2>
+        <h4>Third-Party Links</h4>
         <p>
-          This website may collect information that you voluntarily
-          provide, such as your name, email address, and message when
-          you contact me through a contact form or email.
+          This website may contain links to third-party websites. We are not
+          responsible for their content or privacy practices.
         </p>
 
-        <h2>2. How Information Is Used</h2>
+        <h4>Data Security</h4>
         <p>
-          Information provided through the website may be used to
-          respond to inquiries and communicate with you.
+          Reasonable steps are taken to protect information, but no online
+          service can guarantee complete security.
         </p>
 
-        <h2>3. Cookies</h2>
+        <h4>Changes</h4>
         <p>
-          This website may use cookies or similar technologies to
-          improve website functionality and understand general
-          website usage.
+          This Privacy Policy may be updated when necessary. Changes will be
+          posted on this page.
         </p>
 
-        <h2>4. Analytics</h2>
+        <h4>Contact</h4>
         <p>
-          Analytics services may be used to understand website
-          traffic and improve website performance.
+          If you have any questions about this Privacy Policy, please contact me
+          through the contact information available on this website.
         </p>
-
-        <h2>5. Third-Party Links</h2>
-        <p>
-          This website may contain links to third-party websites such
-          as GitHub, LinkedIn, Facebook, or other external services.
-          I am not responsible for the privacy practices of those
-          websites.
-        </p>
-
-        <h2>6. Data Security</h2>
-        <p>
-          Reasonable measures may be taken to protect information
-          submitted through this website. However, no internet
-          transmission can be guaranteed to be completely secure.
-        </p>
-
-        <h2>7. Changes to This Policy</h2>
-        <p>
-          This Privacy Policy may be updated from time to time.
-          Changes will be reflected on this page with an updated date.
-        </p>
-
-        <h2>8. Contact</h2>
-        <p>
-          If you have questions about this Privacy Policy, please
-          contact me through the contact information available on
-          this website.
-        </p>
-
       </div>
     </div>
   );

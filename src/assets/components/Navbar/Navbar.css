@@ -236,3 +236,24 @@
     height: calc(100vh - 70px);
   }
 }
+
+
+
+.desktop-btn {
+  display: block;
+}
+
+.mobile-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: block;
+    margin-top: 15px;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import { Link } from "react-router-dom";
 
 const profileImage = `${import.meta.env.BASE_URL}images/Dil_Bista.png`;
 
@@ -7,7 +8,6 @@ const About = () => {
   return (
     <section className="about" id="about">
       <div className="about-container">
-
         {/* Profile Image */}
         <div className="about-image">
           <img src={profileImage} alt="Dil Bista" />
@@ -26,15 +26,15 @@ const About = () => {
           </p>
 
           <p>
-            I work with <strong>React.js, Laravel, PHP, JavaScript, MySQL</strong>{" "}
-            and <strong>Git</strong>, with knowledge of{" "}
-            <strong>AWS</strong> and <strong>Docker</strong> for deployment
-            and containerization.
+            I work with{" "}
+            <strong>React.js, Laravel, PHP, JavaScript, MySQL</strong> and{" "}
+            <strong>Git</strong>, with knowledge of <strong>AWS</strong> and{" "}
+            <strong>Docker</strong> for deployment and containerization.
           </p>
 
           <p>
-            I enjoy solving real-world problems, learning new technologies,
-            and turning ideas into reliable software.
+            I enjoy solving real-world problems, learning new technologies, and
+            turning ideas into reliable software.
           </p>
 
           {/* Information */}
@@ -61,11 +61,11 @@ const About = () => {
           </div>
 
           {/* Contact Button */}
-          <a
-            href="mailto:bistadil3@example.com"
-            className="about-btn"
-          >
-            Contact Me
+          <a href="mailto:bistadil3@example.com" className="about-btn">
+            <Link to="/contact" className="about-btn">
+              <span>Contact Me</span>
+              <span className="about-btn-arrow">→</span>
+            </Link>
           </a>
         </div>
       </div>

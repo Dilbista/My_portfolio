@@ -1,94 +1,61 @@
-
 import React from "react";
-import { Link } from "react-router-dom";
 import "./Legal.css";
+
 const Terms = () => {
   return (
     <div className="legal-page">
-      <div className="legal-container">
-
-        <Link to="/" className="back-home">
-          ← Back to Home
-        </Link>
+      <div className="legal-card">
 
         <h1>Terms & Conditions</h1>
 
-        <p className="updated">
-          Last Updated: September 24, 2026
+        <p className="legal-date">
+          Last updated: September 26, 2026
         </p>
 
         <p>
-          By accessing and using this website, you agree to the
-          following Terms & Conditions.
+          Welcome to <strong>bistdil.com.np</strong>. This website is a
+          personal portfolio and blog where I share my learning journey,
+          experiences, projects, tutorials, and technology-related content.
         </p>
 
-        <h2>1. Website Purpose</h2>
+        <h2>Use of Content</h2>
         <p>
-          This website is a personal portfolio created to showcase
-          professional skills, projects, services, experience, and
-          other relevant information.
+          The content is provided for informational and educational purposes.
+          You may use and share it for personal learning with appropriate
+          credit. Please do not copy, republish, or sell my original content
+          without permission.
         </p>
 
-        <h2>2. Use of Website</h2>
+        <h2>External Links</h2>
         <p>
-          You agree to use this website only for lawful purposes and
-          in a way that does not interfere with the operation,
-          security, or availability of the website.
+          This website may contain links to third-party websites. I am not
+          responsible for their content, services, or privacy practices.
         </p>
 
-        <h2>3. Intellectual Property</h2>
+        <h2>Advertising</h2>
         <p>
-          Unless otherwise stated, the original content, text,
-          graphics, designs, and other materials on this website
-          belong to Dil Bista or are used with appropriate permission.
+          This website may display advertisements through services such as
+          Google AdSense. Third-party advertising providers may use cookies
+          or similar technologies according to their own policies.
         </p>
 
-        <h2>4. Projects and Information</h2>
+        <h2>Disclaimer</h2>
         <p>
-          Project descriptions and technical information are provided
-          for portfolio and informational purposes. Some projects may
-          be academic, personal, demonstration, or development work.
+          Information and code examples are provided for general educational
+          purposes. I do not guarantee that all information is complete,
+          accurate, or suitable for every situation.
         </p>
 
-        <h2>5. External Links</h2>
+        <h2>Changes</h2>
         <p>
-          This website may contain links to external websites and
-          services. These links are provided for convenience.
+          These Terms may be updated when necessary. Any changes will be
+          published on this page.
         </p>
 
-        <h2>6. Services</h2>
+        <h2>Contact</h2>
         <p>
-          Information about development and other services displayed
-          on this website is for general information. Specific project
-          requirements, pricing, timelines, and agreements may be
-          discussed separately.
-        </p>
-
-        <h2>7. Disclaimer</h2>
-        <p>
-          The information on this website is provided for general
-          informational purposes. Reasonable efforts may be made to
-          keep the information accurate and current.
-        </p>
-
-        <h2>8. Limitation of Liability</h2>
-        <p>
-          To the extent permitted by applicable law, I am not
-          responsible for losses or damages arising from the use of,
-          or inability to use, this website.
-        </p>
-
-        <h2>9. Changes to These Terms</h2>
-        <p>
-          These Terms & Conditions may be updated from time to time.
-          Changes will become effective when they are published on
-          this page.
-        </p>
-
-        <h2>10. Contact</h2>
-        <p>
-          If you have questions about these Terms & Conditions, please
-          use the contact information available on this website.
+          If you have questions about these Terms, please contact me through
+          the contact information available on this website.
         </p>
 
       </div>

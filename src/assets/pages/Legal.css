@@ -1,86 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
-/* ==============================
-   Legal Pages
-============================== */
+/* =========================================
+   PRIVACY POLICY - MODERN DESIGN
+========================================= */
+
+.privacy-page {
+  min-height: 100vh;
+  padding: 80px 20px;
+
+  font-family: "Inter", sans-serif;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(59, 130, 246, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(99, 102, 241, 0.08),
+      transparent 30%
+    ),
+    #f8fafc;
+}
+
+/* Main document */
+
+.privacy-container {
+  max-width: 880px;
+  margin: auto;
+
+  padding: 65px 70px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(226, 232, 240, 0.9);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 25px 60px rgba(15, 23, 42, 0.08),
+    0 5px 15px rgba(15, 23, 42, 0.04);
+
+  position: relative;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.privacy-container h1 {
+  margin: 0;
+
+  font-size: 3rem;
+  line-height: 1.15;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+
+  color: #0f172a;
+}
+
+/* Gradient title */
+
+.privacy-container h1 {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #2563eb
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Header bottom line */
+
+.privacy-container h1::after {
+  content: "";
+
+  display: block;
+
+  width: 70px;
+  height: 5px;
+
+  margin-top: 20px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #60a5fa
+  );
+}
+
+/* =========================================
+   LAST UPDATED
+========================================= */
+
+.privacy-updated {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 22px;
+  margin-bottom: 45px;
+
+  padding: 9px 15px;
+
+  background: #eff6ff;
+
+  border: 1px solid #dbeafe;
+
+  border-radius: 50px;
+
+  color: #2563eb !important;
+
+  font-size: 0.82rem !important;
+  font-weight: 600;
+}
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.privacy-container > p:not(.privacy-updated):first-of-type {
+  font-size: 1.08rem;
+
+  color: #475569;
+
+  line-height: 1.9;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.privacy-container h4 {
+  margin-top: 42px;
+  margin-bottom: 15px;
+
+  color: #0f172a;
+
+  font-size: 1.3rem;
+
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Number-like accent */
+
+.privacy-container h4::before {
+  content: "";
+
+  width: 8px;
+  height: 28px;
+
+  margin-right: 13px;
+
+  border-radius: 20px;
+
+  background: linear-gradient(
+    180deg,
+    #2563eb,
+    #60a5fa
+  );
+
+  flex-shrink: 0;
+}
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.privacy-container p {
+  margin-bottom: 20px;
+
+  color: #64748b;
+
+  font-size: 0.98rem;
+
+  line-height: 1.9;
+}
+
+/* =========================================
+   IMPORTANT TEXT
+========================================= */
+
+.privacy-container strong {
+  color: #1e293b;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.privacy-container a {
+  color: #2563eb;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.25s ease;
+}
+
+.privacy-container a:hover {
+  color: #1d4ed8;
+
+  text-decoration: underline;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+.privacy-container ul,
+.privacy-container ol {
+  margin: 15px 0 25px;
+
+  padding-left: 25px;
+}
+
+.privacy-container li {
+  margin-bottom: 10px;
+
+  color: #64748b;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   HR
+========================================= */
+
+.privacy-container hr {
+  border: none;
+
+  height: 1px;
+
+  margin: 40px 0;
+
+  background: #e2e8f0;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .privacy-page {
+    padding: 45px 15px;
+  }
+
+  .privacy-container {
+    padding: 45px 30px;
+
+    border-radius: 18px;
+  }
+
+  .privacy-container h1 {
+    font-size: 2.3rem;
+  }
+
+  .privacy-container h4 {
+    font-size: 1.18rem;
+  }
+
+  .privacy-container p {
+    font-size: 0.95rem;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .privacy-page {
+    padding: 25px 10px;
+  }
+
+  .privacy-container {
+    padding: 35px 22px;
+
+    border-radius: 16px;
+  }
+
+  .privacy-container h1 {
+    font-size: 1.9rem;
+
+    letter-spacing: -0.8px;
+  }
+
+  .privacy-container h1::after {
+    width: 55px;
+    height: 4px;
+  }
+
+  .privacy-updated {
+    margin-bottom: 30px;
+  }
+
+  .privacy-container h4 {
+    margin-top: 32px;
+
+    font-size: 1.08rem;
+  }
+
+  .privacy-container h4::before {
+    width: 6px;
+    height: 23px;
+  }
+
+  .privacy-container p {
+    font-size: 0.91rem;
+
+    line-height: 1.8;
+  }
+}
+
+
+
 
 .legal-page {
   min-height: 100vh;
-  padding: 120px 8% 70px;
+  padding: 60px 20px;
   background: #f8fafc;
 }
 
-.legal-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: #ffffff;
-  padding: 45px 50px;
-  border-radius: 15px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+.legal-card {
+  max-width: 850px;
+  margin: auto;
+  padding: 50px 55px;
+
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.07);
 }
 
-.back-home {
-  display: inline-block;
-  margin-bottom: 25px;
-  color: #2563eb;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  transition: 0.3s ease;
+.legal-card h1 {
+  margin: 0 0 8px;
+  color: #0f172a;
+  font-size: 2.4rem;
+  font-weight: 750;
 }
 
-.back-home:hover {
-  color: #1d4ed8;
-  transform: translateX(-3px);
+.legal-date {
+  margin-bottom: 35px !important;
+  color: #64748b !important;
+  font-size: 0.85rem !important;
 }
 
-.legal-container h1 {
-  color: #111827;
-  font-size: 36px;
-  margin-bottom: 8px;
-}
-
-.updated {
-  color: #777;
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-
-.legal-container h2 {
-  color: #111827;
-  font-size: 21px;
+.legal-card h2 {
   margin-top: 30px;
   margin-bottom: 10px;
+  color: #1e293b;
+  font-size: 1.15rem;
+  font-weight: 650;
 }
 
-.legal-container p {
-  color: #4b5563;
-  font-size: 16px;
+.legal-card p {
+  margin-bottom: 18px;
+  color: #475569;
+  font-size: 0.97rem;
   line-height: 1.8;
-  margin-bottom: 15px;
 }
 
-/* ==============================
-   Mobile
-============================== */
+.legal-card strong {
+  color: #0f172a;
+}
+
+.legal-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.legal-card a:hover {
+  text-decoration: underline;
+}
 
 @media (max-width: 600px) {
   .legal-page {
-    padding: 100px 20px 50px;
+    padding: 30px 12px;
   }
 
-  .legal-container {
-    padding: 30px 22px;
+  .legal-card {
+    padding: 35px 22px;
+    border-radius: 12px;
   }
 
-  .legal-container h1 {
-    font-size: 29px;
+  .legal-card h1 {
+    font-size: 1.9rem;
   }
 
-  .legal-container h2 {
-    font-size: 19px;
+  .legal-card h2 {
+    font-size: 1.05rem;
   }
 
-  .legal-container p {
-    font-size: 15px;
+  .legal-card p {
+    font-size: 0.92rem;
+    line-height: 1.7;
   }
 }
