@@ -11,14 +11,21 @@ const posts = [
     description:
       "Today I started learning AWS, EC2, Linux commands, Apache web server, and static website deployment.",
   },
-
   {
     id: "aws-day-two",
-    title: "Day 2: Starting My AWS Learning Journey",
+    title: "Day 2: Creating My AWS Account",
     date: "September 24, 2026",
     category: "AWS",
     description:
-      "Today I started learning AWS, EC2, Linux commands, Apache web server, and static website deployment.",
+      "Today I created my AWS account using the Free Tier and learned about dollar cards, international online payments, and basic AWS billing.",
+  },
+  {
+    id: "aws-day-three",
+    title: "Day 3: Learning AWS IAM and S3",
+    date: "September 25, 2026",
+    category: "AWS",
+    description:
+      "Today I learned AWS IAM and Amazon S3, including users, groups, policies, roles, permissions, buckets, objects, and basic cloud security.",
   },
 ];
 
@@ -27,7 +34,7 @@ function Blog() {
     <section className="blog-page">
       <div className="blog-container">
         {/* Blog Header */}
-        
+
         <div className="blog-header">
           <p className="blog-subtitle">MY DEVELOPER JOURNEY</p>
 
@@ -38,7 +45,7 @@ function Blog() {
             lessons I discover along the way.
           </p>
         </div>
-        
+
         {/* Blog Posts */}
         <div className="blog-grid">
           {posts.map((post) => (
