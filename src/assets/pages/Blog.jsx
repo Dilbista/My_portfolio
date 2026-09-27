@@ -43,73 +43,73 @@ const posts = [
     description:
       "Today I learned AWS VPC and networking basics, including VPCs, subnets, route tables, internet gateways, security groups, and how AWS resources communicate with each other.",
   },
-  {
-    id: "aws-day-six",
-    title: "Day 6: Learning AWS Security Groups and Network ACLs",
-    date: "September 28, 2026",
-    category: "AWS",
-    description:
-      "Today I learned AWS Security Groups and Network ACLs, including inbound and outbound rules, resource-level and subnet-level security, and how they help control network traffic.",
-  },
-  {
-    id: "aws-day-seven",
-    title: "Day 7: Learning AWS Route 53 and DNS",
-    date: "September 29, 2026",
-    category: "AWS",
-    description:
-      "Today I learned AWS Route 53 and DNS, including hosted zones, DNS records, A records, CNAME records, name servers, and how domains connect users to applications.",
-  },
-  {
-    id: "aws-day-eight",
-    title: "Day 8: Learning Docker Basics for AWS",
-    date: "September 30, 2026",
-    category: "AWS",
-    description:
-      "Today I learned Docker basics, including containers, images, Dockerfiles, common Docker commands, port mapping, and how Docker can be used to deploy applications on AWS.",
-  },
+  // {
+  //   id: "aws-day-six",
+  //   title: "Day 6: Learning AWS Security Groups and Network ACLs",
+  //   date: "September 28, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned AWS Security Groups and Network ACLs, including inbound and outbound rules, resource-level and subnet-level security, and how they help control network traffic.",
+  // },
+  // {
+  //   id: "aws-day-seven",
+  //   title: "Day 7: Learning AWS Route 53 and DNS",
+  //   date: "September 29, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned AWS Route 53 and DNS, including hosted zones, DNS records, A records, CNAME records, name servers, and how domains connect users to applications.",
+  // },
+  // {
+  //   id: "aws-day-eight",
+  //   title: "Day 8: Learning Docker Basics for AWS",
+  //   date: "September 30, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned Docker basics, including containers, images, Dockerfiles, common Docker commands, port mapping, and how Docker can be used to deploy applications on AWS.",
+  // },
 
-  {
-    id: "aws-day-nine",
-    title: "Day 9: Learning AWS Lambda",
-    date: "October 1, 2026",
-    category: "AWS",
-    description:
-      "Today I learned AWS Lambda and serverless computing, including Lambda functions, runtimes, triggers, IAM roles, testing functions, and how Lambda works with services like S3 and API Gateway.",
-  },
+  // {
+  //   id: "aws-day-nine",
+  //   title: "Day 9: Learning AWS Lambda",
+  //   date: "October 1, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned AWS Lambda and serverless computing, including Lambda functions, runtimes, triggers, IAM roles, testing functions, and how Lambda works with services like S3 and API Gateway.",
+  // },
 
-  {
-    id: "aws-day-ten",
-    title: "Day 10: Learning AWS CloudWatch",
-    date: "October 2, 2026",
-    category: "AWS",
-    description:
-      "Today I learned Amazon CloudWatch, including metrics, logs, dashboards, alarms, EC2 monitoring, and how CloudWatch helps me monitor and troubleshoot AWS applications.",
-  },
-  {
-    id: "aws-day-eleven",
-    title: "Day 11: Learning CI/CD with AWS",
-    date: "October 3, 2026",
-    category: "AWS",
-    description:
-      "Today I learned CI/CD with AWS, including Continuous Integration, Continuous Delivery, CodePipeline, CodeBuild, CodeDeploy, Docker, Amazon ECR, automated testing, and deployment workflows.",
-  },
+  // {
+  //   id: "aws-day-ten",
+  //   title: "Day 10: Learning AWS CloudWatch",
+  //   date: "October 2, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned Amazon CloudWatch, including metrics, logs, dashboards, alarms, EC2 monitoring, and how CloudWatch helps me monitor and troubleshoot AWS applications.",
+  // },
+  // {
+  //   id: "aws-day-eleven",
+  //   title: "Day 11: Learning CI/CD with AWS",
+  //   date: "October 3, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned CI/CD with AWS, including Continuous Integration, Continuous Delivery, CodePipeline, CodeBuild, CodeDeploy, Docker, Amazon ECR, automated testing, and deployment workflows.",
+  // },
 
-  {
-    id: "aws-day-twelve",
-    title: "Day 12: Learning AWS Security and Best Practices",
-    date: "October 4, 2026",
-    category: "AWS",
-    description:
-      "Today I learned AWS security best practices, including IAM, least privilege, MFA, Security Groups, NACLs, encryption, S3 security, CloudTrail, CloudWatch, and protecting AWS resources and credentials.",
-  },
-  {
-    id: "aws-day-thirteen",
-    title: "Day 13: Deploying a Complete Web Application",
-    date: "October 5, 2026",
-    category: "AWS",
-    description:
-      "Today I deployed a complete web application using a frontend, backend, database, EC2, RDS, Docker, domain, HTTPS, CloudWatch, CI/CD, and AWS security best practices.",
-  },
+  // {
+  //   id: "aws-day-twelve",
+  //   title: "Day 12: Learning AWS Security and Best Practices",
+  //   date: "October 4, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I learned AWS security best practices, including IAM, least privilege, MFA, Security Groups, NACLs, encryption, S3 security, CloudTrail, CloudWatch, and protecting AWS resources and credentials.",
+  // },
+  // {
+  //   id: "aws-day-thirteen",
+  //   title: "Day 13: Deploying a Complete Web Application",
+  //   date: "October 5, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I deployed a complete web application using a frontend, backend, database, EC2, RDS, Docker, domain, HTTPS, CloudWatch, CI/CD, and AWS security best practices.",
+  // },
 ];
 
 function Blog() {
