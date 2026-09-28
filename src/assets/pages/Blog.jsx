@@ -43,14 +43,14 @@ const posts = [
     description:
       "Today I learned AWS VPC and networking basics, including VPCs, subnets, route tables, internet gateways, security groups, and how AWS resources communicate with each other.",
   },
-  // {
-  //   id: "aws-day-six",
-  //   title: "Day 6: Learning AWS Security Groups and Network ACLs",
-  //   date: "September 28, 2026",
-  //   category: "AWS",
-  //   description:
-  //     "Today I learned AWS Security Groups and Network ACLs, including inbound and outbound rules, resource-level and subnet-level security, and how they help control network traffic.",
-  // },
+  {
+    id: "aws-day-six",
+    title: "Day 6: Learning AWS Security Groups and Network ACLs",
+    date: "September 28, 2026",
+    category: "AWS",
+    description:
+      "Today I learned AWS Security Groups and Network ACLs, including inbound and outbound rules, resource-level and subnet-level security, and how they help control network traffic.",
+  },
   // {
   //   id: "aws-day-seven",
   //   title: "Day 7: Learning AWS Route 53 and DNS",
