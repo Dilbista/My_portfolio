@@ -102,14 +102,14 @@ const posts = [
     description:
       "Today I learned AWS security best practices, including IAM, least privilege, MFA, Security Groups, NACLs, encryption, S3 security, CloudTrail, CloudWatch, and protecting AWS resources and credentials.",
   },
-  {
-    id: "aws-day-thirteen",
-    title: "Day 13: Deploying a Complete Web Application",
-    date: "October 5, 2026",
-    category: "AWS",
-    description:
-      "Today I deployed a complete web application using a frontend, backend, database, EC2, RDS, Docker, domain, HTTPS, CloudWatch, CI/CD, and AWS security best practices.",
-  },
+  // {
+  //   id: "aws-day-thirteen",
+  //   title: "Day 13: Deploying a Complete Web Application",
+  //   date: "October 5, 2026",
+  //   category: "AWS",
+  //   description:
+  //     "Today I deployed a complete web application using a frontend, backend, database, EC2, RDS, Docker, domain, HTTPS, CloudWatch, CI/CD, and AWS security best practices.",
+  // },
 ];
 
 function Blog() {
