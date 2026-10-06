@@ -102,6 +102,7 @@ const posts = [
     description:
       "Today I learned AWS security best practices, including IAM, least privilege, MFA, Security Groups, NACLs, encryption, S3 security, CloudTrail, CloudWatch, and protecting AWS resources and credentials.",
   },
+  
   // {
   //   id: "aws-day-thirteen",
   //   title: "Day 13: Deploying a Complete Web Application",
@@ -134,10 +135,10 @@ function Blog() {
 
           <h1>Learn. Build. Share.</h1>
 
-          <p className="blog-intro">
+          {/* <p className="blog-intro">
             I document what I learn, what I build, the problems I solve, and the
             lessons I discover along the way.
-          </p>
+          </p> */}
         </div>
 
         {/* Blog Posts */}
