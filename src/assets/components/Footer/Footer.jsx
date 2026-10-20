@@ -112,7 +112,7 @@ const Footer = () => {
 
           <p>
             <FaEnvelope className="icon" />
-            bistadil3@example.com
+            bistadil3@gmail.com
           </p>
 
           <p>
